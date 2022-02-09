@@ -1,0 +1,145 @@
+:root {
+    /** GERAL **/
+    --hover-opacity: 0.9;
+    --align: center;
+    --section-header-padding: 0 0 3rem;
+    --header-padding: 4rem 0 0;
+    /** CORES **/
+    --color-primary: #FF6565;
+    --color-black: #071629;
+    --color-white: #ffffff;
+    --color-grey: #C4C4C4;
+    /** TEXTO **/
+    --text-color: var(--color-black);
+    --font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-size-small: 1rem;
+    --font-size-medium: 1.125rem;
+    --font-size-large: 1.25rem;
+    --font-size-x-large: 2rem;
+    --font-size-xx-large: 2.875rem;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --line-height-small: 1.2;
+    --line-height-base: 2rem;
+    /** SECTION **/
+    --section-line-height: var(--line-height-small);
+    --section-margin: 0;
+    --section-title-font-size: var(--font-size-x-large);
+    --section-title-font-weight: var(--font-weight-bold);
+    --section-title-color: var(--color-black);
+    --section-subtitle-font-size: var(--font-size-large);
+    --section-subtitle-font-weight: var(--font-weight-bold);
+    --section-subtitle-color: var(--color-black);
+    --section-text-font-size: var(--font-size-medium);
+    --section-text-font-weight: var(--font-weight-regular);
+    --section-text-color: var(--color-black);
+    --section-legend-font-size: var(--font-size-small);
+    --section-legend-font-weight: var(--font-weight-regular);
+    --section-legend-line-height: var(--line-height-regular);
+    --section-legend-color: var(--color-black);
+    --section-important-information-font-size: var(--font-size-xx-large);
+    --section-important-information-font-weight: var(--font-weight-bold);
+    --section-important-information-color: var(--color-black);
+    /** NAVBAR **/
+    --nav-item-font-family: var(--font-family);
+    --nav-item-font-weight: var(--font-weight-bold);
+    --nav-item-font-size: var(--font-size-medium);
+    --nav-item-letter-spacing: .04rem;
+    --nav-item-display: inline-block;
+    --nav-item-margin: 0 0 0 2rem;
+    --nav-item-link-hover: var(--color-primary);
+    /** BUTTON **/
+    --button-display: inline-block;
+    --button-padding: 0.8rem 1.9rem;
+    --button-border: var(--color-primary) solid 0.2rem;
+    --button-color: var(--color-white);
+    --button-text-decoration: none;
+    --button-font-size: var(--font-size-large);
+    --button-hover-color: var(--color-white);
+    --button-hover-text-decoration: none;
+    --button-background: var(--color-primary);
+}
+
+/* Base */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-base);
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-bold);
+}
+
+input {
+    margin-bottom: 45px;
+    width: 335px;
+    height: 30px;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 2px solid var(--color-grey);
+    transition: .2s ease-in-out;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: 0;
+}
+
+input:valid,
+input:focus {
+    border-bottom: 2px solid var(--color-primary);
+}
+
+::placeholder {
+    color: var(--text-color);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-small);
+    font-family: var(--font-family);
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:visited {
+    font-style: italic;
+}
+
+a:hover {
+    color: var(--color-primary);
+}
+
+/* Theme */
+
+[data-section-theme="dark"] {
+    --text-color: var(--color-white);
+    --section-title-color: var(--color-white);
+    --section-subtitle-color: var(--color-white);
+    --section-text-color: var(--color-white);
+    --section-legend-color: var(--color-white);
+    --section-important-information-color: var(--color-white);
+}
