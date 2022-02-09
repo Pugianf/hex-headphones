@@ -656,3 +656,124 @@ input,
     align-items: var(--align);
     max-width: 400px;
 }
+
+/* Footer */
+
+.footer {
+    background-color: var(--color-black);
+}
+
+.footer-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 40px;
+}
+
+.footer-copyright {
+    padding-bottom: 40px;
+}
+
+
+/*Media queries*/
+
+@media only screen and (max-width: 768px) {
+     :root {
+        --nav-item-margin: 0;
+        --header-padding: 2rem 0 0;
+        --nav-item-font-size: var(--font-size-large);
+    }
+    .navbar-menu {
+        display: none;
+    }
+    .header .nav {
+        flex-direction: column;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+    }
+    .header-container {
+        flex-wrap: wrap;
+        max-width: 588px;
+    }
+    .header .menu-icon {
+        display: block;
+    }
+    .section-hero .section-inner {
+        max-width: 80%;
+    }
+    .section-header {
+        width: 80%;
+    }
+    .section-hero .section-body {
+        padding: 2rem;
+    }
+    .section-what-we-do .container {
+        padding: 110px 0 14px 0;
+    }
+    .section-our-results .container {
+        padding: 110px 0 14px 0;
+    }
+    .social-item {
+        padding-right: 20px;
+    }
+    .social-item:last-child {
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 57%;
+    }
+    .header-logo {
+        flex-basis: 70%;
+    }
+    .section-what-we-do .section-body {
+        flex-direction: column;
+    }
+    .section-what-we-do .section-content {
+        padding-bottom: 96px;
+    }
+    .section-our-results .section-body {
+        flex-direction: column;
+    }
+    .section-our-results .section-content {
+        margin-bottom: 96px;
+    }
+    .footer-header {
+        flex-direction: column;
+        align-items: var(--align);
+    }
+    .social {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    html {
+        font-size: 60%;
+    }
+    .header .header-container {
+        margin: auto;
+    }
+    .header-logo {
+        flex-basis: 40%;
+        margin: auto;
+    }
+    .section-what-we-do .section-body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .section-what-we-do .section-body .section-content {
+        padding-bottom: 96px;
+        margin: auto;
+    }
+    .section-our-results .section-body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .section-our-results .section-body .section-content {
+        margin: auto;
+        margin-bottom: 96px;
+    }
+}
