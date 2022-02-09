@@ -216,3 +216,73 @@ a:hover {
 .holberton_school-icon-ic_facebook:before {
     content: "\e908";
 }
+
+/* General */
+
+main img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main .container {
+    padding: 110px 0;
+}
+
+.button {
+    display: var(--button-display);
+    padding: var(--button-padding);
+    border: var(--button-border);
+    font-size: var(--button-font-size);
+    color: var(--button-color);
+    text-decoration: var(--button-text-decoration);
+    cursor: pointer;
+    border-radius: 22px;
+    text-transform: uppercase;
+    background: var(--button-background);
+    width: fit-content;
+}
+
+.button:hover {
+    color: var(--button-hover-color);
+    text-decoration: var(--button-hover-text-decoration);
+    transition-duration: .3S;
+    opacity: var(--hover-opacity);
+}
+
+.input-container {
+    position: relative;
+}
+
+input:valid+.label,
+input:focus+.label {
+    color: var(--color-grey);
+    font-size: var(--font-size-small);
+    top: -30px;
+    pointer-events: none;
+}
+
+.label {
+    top: 0;
+    left: 0;
+    right: 0;
+    color: var(--color-black);
+    font-weight: var(--font-weight-bold);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: var(--font-size-medium);
+    cursor: text;
+    transition: .2s ease-in-out;
+    box-sizing: border-box;
+}
+
+input,
+.label {
+    font-size: var(--font-size-medium);
+}
