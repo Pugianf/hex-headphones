@@ -322,3 +322,63 @@ input,
     -ms-animation-iteration-count: 1;
     -ms-transform-origin: 50% 50%;
 }
+
+@keyframes animationFrames {
+    0% {
+        transform: scaleX(1.00) scaleY(1.00);
+    }
+    50% {
+        transform: scaleX(1.20) scaleY(1.20);
+    }
+    100% {
+        transform: scaleX(1.00) scaleY(1.00);
+    }
+}
+
+@-moz-keyframes animationFrames {
+    0% {
+        -moz-transform: scaleX(1.00) scaleY(1.00);
+    }
+    50% {
+        -moz-transform: scaleX(1.20) scaleY(1.20);
+    }
+    100% {
+        -moz-transform: scaleX(1.00) scaleY(1.00);
+    }
+}
+
+@-webkit-keyframes animationFrames {
+    0% {
+        -webkit-transform: scaleX(1.00) scaleY(1.00);
+    }
+    50% {
+        -webkit-transform: scaleX(1.20) scaleY(1.20);
+    }
+    100% {
+        -webkit-transform: scaleX(1.00) scaleY(1.00);
+    }
+}
+
+@-o-keyframes animationFrames {
+    0% {
+        -o-transform: scaleX(1.00) scaleY(1.00);
+    }
+    50% {
+        -o-transform: scaleX(1.20) scaleY(1.20);
+    }
+    100% {
+        -o-transform: scaleX(1.00) scaleY(1.00);
+    }
+}
+
+@-ms-keyframes animationFrames {
+    0% {
+        -ms-transform: scaleX(1.00) scaleY(1.00);
+    }
+    50% {
+        -ms-transform: scaleX(1.20) scaleY(1.20);
+    }
+    100% {
+        -ms-transform: scaleX(1.00) scaleY(1.00);
+    }
+}
